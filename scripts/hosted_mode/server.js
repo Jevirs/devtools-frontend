@@ -81,7 +81,8 @@ var proxyFilePathToURL = {
 };
 
 function cloudURL(path, commitHash) {
-  return `https://chrome-devtools-frontend.appspot.com/serve_file/@${commitHash}/${path}`;
+  // return `https://chrome-devtools-frontend.appspot.com/serve_file/@${commitHash}/${path}`;
+  return `http://localhost:8080/${path}`;
 }
 
 var proxyFileCache = new Map();

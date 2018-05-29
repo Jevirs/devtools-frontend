@@ -28,7 +28,7 @@ var chromeArgs = [
   `--remote-debugging-port=${REMOTE_DEBUGGING_PORT}`,
   `--custom-devtools-frontend=http://localhost:${SERVER_PORT}/front_end/`, `--no-first-run`,
   '--enable-devtools-experiments', `http://localhost:${REMOTE_DEBUGGING_PORT}#custom=true&experiments=true`,
-  `https://devtools.chrome.com`, `--user-data-dir=${CHROME_PROFILE_PATH}`
+  `https://baidu.com`, `--user-data-dir=${CHROME_PROFILE_PATH}`
 ].concat(process.argv.slice(2));
 
 if (process.platform === 'win32') {
